@@ -71,7 +71,7 @@
   height: 1px;
   background: rgb(255 255 255 / 70%);
   position: absolute;
-  bottom: -10px;
+  bottom: -14px;
   animation: 1s ease-out 0s 1 slideIn;  
 }
   @keyframes slideIn {
@@ -174,7 +174,11 @@ margin-bottom: 20px;
   }
   .CMSchild img {
     filter: brightness(0) invert(1);
-    width: 43%;
+    width: 120px;
+  }
+  .contentBreakContainer {
+    background-color: grey;
+    height: 100px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -244,7 +248,7 @@ margin-bottom: 20px;
     height: 1px;
     background: rgb(255 255 255 / 70%);
     position: absolute;
-    bottom: -14px;
+    bottom: -8px;
     animation: 1s ease-out 0s 1 slideIn;  }
   @keyframes slideIn {
     0% {
@@ -290,4 +294,37 @@ width: 0px;
     font-weight: bold;
     
   }
+  .CMScontainer {
+    width: 100%;
+    height: 125px;
+    background-color: #110f0f;
+  }
+  .CMStitle {
+    height: 75px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+    font-family: 'Poppins';
+    color: white;
+    font-size: .8rem;
+  }
+  .CMSflex {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .CMSchild {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .CMSchild img {
+    filter: brightness(0) invert(1);
+    width: 91%;
+    }
 }

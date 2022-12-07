@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar/Navbar";
 import Services from "../components/Services/Services";
 import styles from "../styles/Home.module.css";
+import Contact from "../components/Contact/Contact"
 
 export default function Home() {
   return (
@@ -64,7 +65,8 @@ export default function Home() {
       
       </div>
       <Services/>
-      <div className={styles.contentBreakContainer}></div>
+      <div className={styles.contentBreakContainer}>Break Content</div>
+      <Contact/>
     </div>
   );
 }
