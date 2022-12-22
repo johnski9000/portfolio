@@ -1,65 +1,74 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Services.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Services() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+  
   return (
     <div className={styles.mainContainer}>
       <div className={styles.greyScreen}></div>
-      <div className={styles.title}>Our Services<div className={styles.underline}></div></div>
-      <div className={styles.subTitle}>Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</div>
+      <div className={styles.title} data-aos="fade-up" data-aos-duration="500">Our Services<div className={styles.underline}></div></div>
+      <div className={styles.subTitle} data-aos="fade-up" data-aos-duration="500">Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</div>
       <div className={styles.servicesMain}>
-        <div className={styles.servicesMainCard}>
+        <div className={styles.servicesMainCard} data-aos="fade-up-right" data-aos-duration="500">
+          <div className={styles.titleSection} >
+            <img src="./web-design.png" />
+          </div>
+          <div className={styles.cardTitle}>Creative Web Design</div>
+          <div className={styles.cardBody}>
+          Crafting beautiful websites that keep your users engaged.
+          </div>
+        </div>
+        <div className={styles.servicesMainCard} data-aos="fade-up" data-aos-duration="500">
+          <div className={styles.titleSection}>
+            <img src="./web-programming.png" />
+          </div>
+          <div className={styles.cardTitle}>Web Development</div>
+          <div className={styles.cardBody}>
+          Building cutting edge websites that encompass the latest technology
+          </div>
+        </div>
+        <div className={styles.servicesMainCard} data-aos="fade-up-left" data-aos-duration="500">
+          <div className={styles.titleSection}>
+            <img src="./branding.png" />
+          </div>
+          <div className={styles.cardTitle}>Branding</div>
+          <div className={styles.cardBody}>
+          Creating and evolving our favorite brands through great design
+          </div>
+        </div>
+        <div className={styles.servicesMainCard} data-aos="fade-up-right" data-aos-duration="500">
           <div className={styles.titleSection}>
             <img src="./ux-design.png" />
           </div>
-          <div className={styles.cardTitle}>Branding</div>
+          <div className={styles.cardTitle}>Graphics Design</div>
           <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+          We create concepts and designs to make your brand succeed online
           </div>
         </div>
-        <div className={styles.servicesMainCard}>
+        <div className={styles.servicesMainCard} data-aos="fade-up" data-aos-duration="500">
           <div className={styles.titleSection}>
-            <img src="./coding.png" />
+            <img src="./social-media.png" />
           </div>
-          <div className={styles.cardTitle}>Branding</div>
+          <div className={styles.cardTitle}>Social Media</div>
           <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+          Create a campaign or marketing strategy to reach millions on social media
           </div>
         </div>
-        <div className={styles.servicesMainCard}>
+        <div className={styles.servicesMainCard} data-aos="fade-up-left" data-aos-duration="500">
           <div className={styles.titleSection}>
-            <img src="./network.png" />
+            <img src="./cloud-computing.png" />
           </div>
-          <div className={styles.cardTitle}>Networkin</div>
+          <div className={styles.cardTitle}>Hosting</div>
           <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
-          </div>
-        </div>
-        <div className={styles.servicesMainCard}>
-          <div className={styles.titleSection}>
-            <img src="./ux-design.png" />
-          </div>
-          <div className={styles.cardTitle}>Branding</div>
-          <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
-          </div>
-        </div>
-        <div className={styles.servicesMainCard}>
-          <div className={styles.titleSection}>
-            <img src="./coding.png" />
-          </div>
-          <div className={styles.cardTitle}>Branding</div>
-          <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
-          </div>
-        </div>
-        <div className={styles.servicesMainCard}>
-          <div className={styles.titleSection}>
-            <img src="./network.png" />
-          </div>
-          <div className={styles.cardTitle}>Networkin</div>
-          <div className={styles.cardBody}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+          Powerful dedicated web server that guarantees you 100% uptime on your project
           </div>
         </div>
       </div>
