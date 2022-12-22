@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import styles from "./Navbar.module.css"
 
 function Navbar() {
@@ -6,7 +7,7 @@ function Navbar() {
   return (
     <div className={styles.navMain}>
         <div className={styles.navLogo}>
-            <img src="./logo.png" alt="logo"/>
+          <Link href="/"><img src="./logo.png" alt="logo"/></Link>
             {/* JW Digital LTD */}
         </div>
         <div className={styles.middleNav}>
@@ -21,10 +22,10 @@ function Navbar() {
         </div>
         <div className={styles.navItems}>
             <ul>
-                <li>About</li>
-                <li>Services</li>
-                <li>Our Work</li>
-                <li>Contact</li>
+                <li><Link href="/" >Home <div className={styles.underline}></div></Link></li>
+                <li><Link href="/">Services<div className={styles.underline}></div></Link></li>
+                <li><Link href="/">Our Work<div className={styles.underline}></div></Link></li>
+                <li><Link href="/contact">Contact</Link></li>
             </ul>
         </div>
     </div>

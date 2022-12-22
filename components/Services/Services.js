@@ -4,7 +4,8 @@ import styles from "./Services.module.css";
 function Services() {
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.title}>Our Services</div>
+      <div className={styles.greyScreen}></div>
+      <div className={styles.title}>Our Services<div className={styles.underline}></div></div>
       <div className={styles.subTitle}>Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</div>
       <div className={styles.servicesMain}>
         <div className={styles.servicesMainCard}>

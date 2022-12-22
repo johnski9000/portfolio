@@ -1,0 +1,203 @@
+.formContainer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    /* background-color: #1a1e2b; */
+    position: relative;
+
+}
+.bannerImg {
+    width: 40%;
+    height: 100vh;
+    background: url("../../public/contactBanner.jpg");
+    background-size: contain;
+}
+.form:invalid button{
+
+}
+.formContainer form {
+    width: 570px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.formTitleContainer {
+    width: 570px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.formTitleContainer div:nth-child(1) {
+    padding-bottom: 10px;
+}
+.formTitleContainer div img {
+width: 50px;
+padding-left: 20px;
+}
+.formTitleContainer div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.formOptionContainer {
+    width: 250px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.formOptionContainer:nth-child(1) {
+margin-right: 50px;
+}
+.formOptionContainer:nth-child(3) {
+    width: 570px;
+    height: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+.formOptionContainer:nth-child(3) input {
+    height: 100%;
+    width: 100%;
+}
+.formOptionContainer:nth-child(3) span{
+    bottom: 72%;
+}
+.formOptionContainer input{
+width: 100%;
+padding: 10px;
+border: 1px solid rgba(255, 255, 255, 0.25);
+background: #1a1e2b;
+border-radius: 5px;
+outline: none;
+color: white;
+font-size: 1em;
+}
+.formOptionContainer span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.formOptionContainer input:valid ~ span,
+.formOptionContainer input:focus ~ span {
+    color: black;
+    transform: translateX(10px) translateY(-35px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-image: linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));
+        border-left: 1px solid linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));
+    border-right: 1px solid linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));
+    letter-spacing: 0.2em;
+
+}
+.formOptionContainer input:valid,
+.formOptionContainer input:focus {
+border: 1px solid linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));
+}
+.formMessageContainer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    flex-flow: column;
+}
+
+.buttonContainer {
+    width: 100%;
+}
+.button {
+    height: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(46deg 73% 36%);
+    padding: 0px 28px;
+    background-image: linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));    color: black;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .4s;
+}
+
+.button img {
+    width: 24px;
+    /* filter: brightness(0) invert(1); */
+    padding-left: 20px;
+    transition: .5s;
+}
+.button:hover img {
+    padding-left: 5px;
+}
+.button:hover {
+    color: black;
+    transform:
+      translate3d(0px, -3px, 0px)
+      /* rotateX(51deg) */
+      /* rotateZ(43deg) */
+      ;
+    box-shadow:
+      1px 1px 0 1px black,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+  }
+  
+  .customShapeDividerTop1670520310 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+.svg {
+    filter: brightness(0) invert(1);
+}
+
+
+  .buttonLoading {
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(46deg 73% 36%);
+    padding: 0px 28px;
+    background-image: linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));    color: black;
+    border-radius: 4px;
+  }
+  .buttonLoading::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+  
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+      }
+    }

@@ -2,6 +2,7 @@
     .mobileContainer {
         display: none;
     }
+    
     .navMain {
     height: 75px;
     border-bottom: 0.5px solid grey;
@@ -21,8 +22,17 @@
     font-size: 1.6rem;
     font-family: 'Roboto Slab', serif;
 }
+.navLogo a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: auto;
+  color: white;
+  font-size: 1.6rem;
+  font-family: 'Roboto Slab', serif;
+}
 .navLogo img {
-    height:60%;
+    height:80%;
 }
 .navItems ul {
     list-style: none;
@@ -39,7 +49,20 @@
     color: white;
     margin-left: 18px;
     margin-right: 18px;
+    font-family: 'Montserrat', sans-serif;
 }
+.navItems ul li a {
+  color: white;
+  margin-left: 18px;
+  margin-right: 18px;
+  text-decoration: none;
+}
+.navItems ul li:last-child a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .navItems ul li:last-child{
     margin-left: 18px;
     margin-right: 18px;
@@ -64,15 +87,48 @@
       -1px 0 28px 0 rgba(34, 33, 81, 0.01),
       54px 54px 28px -10px rgba(34, 33, 81, 0.15);
   }
+  .navItems ul li:last-child a:hover {
+    color: black;
+  }
 .navItems ul li:hover {
    color: hsl(46deg 73% 36%);
+   text-decoration: none;
+
 }
+.navItems ul li a {
+  position: relative;
+  
+}
+.underline {
+  /* width: 140%; */
+  width: 40px;
+  height: 0px;
+  /* background: rgb(255 255 255 / 70%); */
+  background: #be9c28;
+  position: absolute;
+  bottom: -7px;
+  left: -2px;
+  transition: 0.5s;
+}
+.navItems ul li a:hover > .underline {
+width: 75px;
+height: 1px;
+}
+/* .navItems ul li a:hover {
+  color: hsl(46deg 73% 36%);
+} */
 }
 @media screen and (max-width: 768px) {
     /* .navLogo {
         display: none;
     } */
     .navLogo {
+      width: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navLogo a {
       width: 160px;
       display: flex;
       justify-content: center;
