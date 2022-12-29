@@ -1,0 +1,208 @@
+.bannerServices {
+background-image: url("../../public/branding.jpg");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: bottom;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerServicesGD {
+  background-image: url("../../public/graphicDesign.jpg");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerServicesH {
+  background-image: url("../../public/hosting.webp");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerServicesS {
+  background-image: url("../../public/social-audio.png");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerServicesWD {
+  background-image: url("../../public/webDesign.jpg");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerServicesWB {
+  background-image: url("../../public/webDevelopment.jpg");    
+width: 100%;
+height: 85vh;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.bannerCover {
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+  }
+.bannerText {
+    position: absolute;
+
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .arrowDown {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 1%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    animation: jumpInfinite 1.5s infinite;
+  }
+  .arrowDown img {
+    width: 50px;
+    height: 100%;
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      bottom: 3%;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  .contentBreak {
+    /* background-image: linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%)); */
+    background: #110f0f;
+    width: 100%;
+    height: 70px;
+  }
+  .servicesDescribed {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110f0f;
+  }
+  .servicesDescribed div:nth-child(1) h1{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 45px;
+    letter-spacing: 1.5px;
+  }
+  .servicesDescribed div:nth-child(1) h1:after {
+    content: ".";
+    color: #efbf01;
+    padding-left: 5px;
+    font-size: 50px;
+  }
+  .servicesDescribed div:nth-child(1) p {
+    width: 80%;
+    line-height: 2em;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    margin: 0 auto;
+  }
+  .servicesDescribed div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicesDescribed div:nth-child(2) {
+    align-items: center;
+  }
+  .servicesDescribed div img {
+    width: 40%;
+
+  }
+  .brandingProcess {
+    width: 100%;
+    height: auto;
+    background-color: #110f0f;
+
+  }
+  .brandingProcess h1 {
+    /* text-align: center; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 45px;
+    color: white;
+text-align: center;
+    letter-spacing: 1.5px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+  .brandingProcess p {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 125px;
+
+  }
+  .brandingList {
+    margin: 0;
+    color: white;
+  }
+  .brandingList p {
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.7em;
+    font-size: 17px;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    padding-right: 50px;
+  }
+  .brandingList div {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-bottom: 50px;
+    padding-left: 40px;
+  }
+  .brandingList div span {
+    color: #efbf01;
+    margin-right: 10px;
+    font-weight: 300;
+  }

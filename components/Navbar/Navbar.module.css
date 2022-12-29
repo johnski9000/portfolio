@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 768px) {
     .mobileContainer {
         display: none;
@@ -53,9 +54,11 @@
 }
 .navItems ul li a {
   color: white;
-  margin-left: 18px;
-  margin-right: 18px;
+
   text-decoration: none;
+      /* width: 100%;
+    height: 100%;
+    display: flex; */
 }
 .navItems ul li:last-child a {
   text-decoration: none;
@@ -91,12 +94,13 @@
     color: black;
   }
 .navItems ul li:hover {
-   color: hsl(46deg 73% 36%);
+   color: hsl(46deg 73% 36%) !important;
    text-decoration: none;
 
 }
 .navItems ul li a {
   position: relative;
+  transition: .85s;
   
 }
 .underline {
@@ -108,15 +112,15 @@
   position: absolute;
   bottom: -7px;
   left: -2px;
-  transition: 0.5s;
+  transition: width 0.5s;
 }
 .navItems ul li a:hover > .underline {
 width: 75px;
 height: 1px;
 }
-/* .navItems ul li a:hover {
+.navItems ul li a:hover {
   color: hsl(46deg 73% 36%);
-} */
+}
 }
 @media screen and (max-width: 768px) {
     /* .navLogo {
