@@ -13,11 +13,10 @@ function Services() {
   }, []);
 
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.mainContainer} id="services">
       <div className={styles.greyScreen}></div>
       <div
         className={styles.title}
-        id="services"
         // data-aos="fade-up" data-aos-duration="500"
       >
         Our Services<div className={styles.underline}></div>
@@ -136,7 +135,6 @@ function Services() {
           </div>
         </Link>
       </div>
-    
     </div>
   );
 }

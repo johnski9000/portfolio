@@ -3,9 +3,9 @@ import styles from "./Projects.module.css"
 
 function Projects() {
   return (
-    <div className={styles.projectsMain}>
+    <div className={styles.projectsMain} id="projects">
      
-        <h1 className={styles.title}>Recent Projects<div className={styles.underline}></div></h1>
+        <h1 className={styles.title} >Recent Projects<div className={styles.underline}></div></h1>
         <div className={styles.subtitle}>Consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices</div>
         <div className={styles.cardContainer}>
           <div className={styles.card}></div>

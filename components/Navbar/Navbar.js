@@ -9,14 +9,36 @@ function Navbar() {
   const router = useRouter()
   const [setOpen, setMenuOpen] = useState(false);
   useEffect(() => {
+    if (getCookie('projects') === undefined) {
+      return
+    } else if (getCookie('projects').toString() === "true") {
+       const projectsCookie = getCookie('projects').toString();
+       setCookie('projects', '');
+      setTimeout(function() {
+        document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+
+    }, 500)
+    }
+
+
+    if (getCookie('services') === undefined) {
+      return
+    } else if (getCookie('services').toString() === "true") {
     const servicesCookie = getCookie('services').toString();
-    if (servicesCookie === "true") {
-      setCookie('services', '');
+       setCookie('services', '');
       setTimeout(function() {
         document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start" });
 
     }, 500)
     }
+    // if (servicesCookie === "true") {
+    //   setCookie('services', '');
+    //   setTimeout(function() {
+    //     document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start" });
+
+    // }, 500)
+    // }
+
   }, [])
   
 
@@ -26,6 +48,15 @@ function Navbar() {
       document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start" });
     } else {
       setCookie('services', 'true');
+      router.push("/")
+    }
+  }
+  function goToProjects(e) {
+    e.preventDefault();
+    if (window.location.pathname === "/") {
+      document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      setCookie('projects', 'true');
       router.push("/")
     }
   }
@@ -50,7 +81,7 @@ function Navbar() {
             <ul>
                 <li><Link href="/" >Home <div className={styles.underline}></div></Link></li>
                 <li><Link href="/" onClick={goToServices}>Services<div className={styles.underline}></div></Link></li>
-                <li><Link href="/">Our Work<div className={styles.underline}></div></Link></li>
+                <li><Link href="/" onClick={goToProjects}>Our Work<div className={styles.underline}></div></Link></li>
                 <li><Link href="/contact">Contact</Link></li>
             </ul>
         </div>
