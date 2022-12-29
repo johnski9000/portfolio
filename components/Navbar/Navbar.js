@@ -76,7 +76,7 @@ function Navbar() {
             <div className={setOpen ? styles.activeMenuLine2 : styles.menuLine2}></div>
             <div className={setOpen ? styles.activeMenuLine3 : styles.menuLine3}></div>
           </div>
-          <div className={styles.navItemsMobile}>
+          <div className={setOpen ? styles.navItemsMobileActive : styles.navItemsMobileInactive}>
             <ul>
                 <li><Link href="/" >Home <div className={styles.underline}></div></Link></li>
                 <li><Link href="/" onClick={goToServices}>Services<div className={styles.underline}></div></Link></li>
