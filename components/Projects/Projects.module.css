@@ -61,6 +61,10 @@
     .card {
         width: 45%;
     }
+    .subtitle {
+        text-align: center;
+    width: 90%;
+    }
 }
 @media screen and (max-width: 425px) {
     .card {
