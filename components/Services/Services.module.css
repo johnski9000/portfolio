@@ -144,6 +144,11 @@ transform: translateY(-20px);
     width: 45px;
     filter: brightness(0) invert(1);
 }
+@media screen and (max-width: 768px) {
+  .cardBody {
+    width: 90% !important;
+  }
+}
 .cardBody {
     height: 100px;
     width: 95%;

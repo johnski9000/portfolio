@@ -46,6 +46,7 @@ function Navbar() {
     e.preventDefault();
     if (window.location.pathname === "/") {
       document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen(false)
     } else {
       setCookie('services', 'true');
       router.push("/")
@@ -55,6 +56,7 @@ function Navbar() {
     e.preventDefault();
     if (window.location.pathname === "/") {
       document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen(false)
     } else {
       setCookie('projects', 'true');
       router.push("/")

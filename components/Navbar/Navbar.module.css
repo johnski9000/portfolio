@@ -3,7 +3,10 @@
     .mobileContainer {
         display: none;
     }
-    
+    .mobileNavItemsActive,
+    .mobileNavItemsInactive {
+      display: none;
+    }
     .navMain {
     height: 75px;
     border-bottom: 0.5px solid grey;
@@ -168,6 +171,8 @@ height: 1px;
         /* background-color: #231f20; */
         background-color: #110f0f;
         z-index: 1000;
+        position: fixed;
+        right: 0;
     }
     .mobileNavItemsInactive {
         transition: width 1s;

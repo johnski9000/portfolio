@@ -39,8 +39,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./web-design.png" />
@@ -55,8 +55,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./web-programming.png" />
@@ -72,8 +72,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./branding.png" />
@@ -88,8 +88,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./ux-design.png" />
@@ -104,8 +104,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./social-media.png" />
@@ -121,8 +121,8 @@ function Services() {
           <div
             className={styles.servicesMainCard}
             data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="150"
+            data-aos-duration="700"
+            // data-aos-delay="150"
           >
             <div className={styles.titleSection}>
               <img src="./cloud-computing.png" />

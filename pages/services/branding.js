@@ -8,6 +8,32 @@ import Footer from "../../components/Footer/Footer";
 
 function Branding() {
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 140) {
+        document.querySelector(
+          "#__next > div > div.Navbar_navMain__bTor6"
+        ).style.position = "fixed";
+        document.querySelector(
+          "#__next > div > div.Navbar_navMain__bTor6"
+        ).style.zIndex = "10";
+      }
+      if (window.scrollY < 5) {
+        document.querySelector(
+          "#__next > div > div.Navbar_navMain__bTor6"
+        ).style.position = "unset";
+        document.querySelector(
+          "#__next > div > div.Navbar_navMain__bTor6"
+        ).style.zIndex = "10";
+      }
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);

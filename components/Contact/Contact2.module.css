@@ -15,6 +15,11 @@ background-repeat: no-repeat;
 background-position: center;
 position: relative;
 }
+@media screen and (max-width: 468px) {
+    .containerForm {
+        width: 100% !important;
+    }
+}
 .containerForm {
     display: flex;
     flex-flow: column;
