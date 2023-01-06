@@ -66,8 +66,8 @@ function WebDevelopment() {
           <img src="/arrow-services.png" />
         </div>
       </div>
-      <div className={styles.contentBreak} ref={myRef}></div>
-      <div className={styles.servicesDescribed}>
+      <div className={styles.contentBreak} ></div>
+      <div className={styles.servicesDescribed} ref={myRef}>
         <div>
           <h1 data-aos="fade-up" data-aos-duration="1000">
             Stunning web design optimised for mobile

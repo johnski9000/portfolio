@@ -39,9 +39,9 @@ function Branding() {
   }, []);
   const myRef = useRef(null);
 
-  const executeScroll = () =>
-    myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  const executeScroll = () =>{
 
+    myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });}
   return (
     <div>
       <Head>
@@ -66,8 +66,8 @@ function Branding() {
           <img src="/arrow-services.png" />
         </div>
       </div>
-      <div className={styles.contentBreak} ref={myRef}></div>
-      <div className={styles.servicesDescribed}>
+      <div className={styles.contentBreak}></div>
+      <div className={styles.servicesDescribed} ref={myRef}>
         <div>
           <h1 data-aos="fade-up" data-aos-duration="1000">
             Your Brand
