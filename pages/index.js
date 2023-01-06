@@ -80,9 +80,12 @@ export default function Home() {
       <div className={styles.CMScontainer}>
         <div className={styles.CMStitle}>
           {/* We are experienced with all the popular Content Management Systems */}
+          <div>
           We build exceptional online experiences that inspire people and engage
         their clients. We do this by combining UX, Technology, creativity, and
-        data.        </div>
+        data. 
+          </div>
+                 </div>
         <div className={styles.CMSflex}>
           <div className={styles.CMSchild}>
             <img src="https://www.candymarketing.co.uk/wp-content/uploads/2021/03/wordpress-1.svg" />

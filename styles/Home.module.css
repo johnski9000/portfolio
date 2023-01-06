@@ -180,6 +180,10 @@ margin-bottom: 2.5em;
     text-align: center;
     border-bottom: 1px solid grey;
   }
+  .CMStitle > div {
+    width: 80%;
+    margin: 0 auto;
+  }
   .CMSflex {
     width: 100vw;
     /* overflow: scroll; */
@@ -190,18 +194,17 @@ margin-bottom: 2.5em;
     justify-content: space-around;
     align-items: center;
     animation-name: uspAnimation;
-    animation-duration: 23s;
+    animation-duration: 24s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    border-bottom: 1px solid grey;
-
+    
   }
   @keyframes uspAnimation {
     0% {
         margin-left: 0%;
     }
     100% {
-        margin-left: calc(-90vw);
+        margin-left: calc(-95vw);
     }
 }
   .CMSchild {

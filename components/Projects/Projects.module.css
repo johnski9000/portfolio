@@ -16,7 +16,6 @@
 }
 .title {
     text-align: center;
-    font-size: 2.2rem;
     /* font-family: 'Roboto Slab', serif; */
     font-family: 'Montserrat', sans-serif;
     /* color: #f4d44e; */
@@ -24,8 +23,9 @@
     position: relative;
     width: fit-content;
     margin: 0 auto;
-    margin-bottom: 30px;
-    font-weight: 400;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 39px;
 }
 .underline {
     position: absolute;
@@ -35,14 +35,7 @@
     bottom: -12%;
     left: 10%;
 }
-.subtitle {
-    margin: 20px auto;
-    width: fit-content;
-    color: grey !important;
-    font-size: 14px;
-    font-family: 'Poppins';
-    margin-bottom: 100px;
-}
+
 .cardContainer {
     width: 90%;
     margin: 0 auto;
@@ -53,21 +46,19 @@
 .card {
     border-radius: 20px;
     width: calc(100% / 4.3);
-    height: 250px;
+    height: 300px;
     margin: 0 auto;
     background-color: grey;
     margin-bottom: 20px;
     display: flex;
     flex-flow: column;
+    transition: 1s;
 }
 @media screen and (max-width: 768px) {
     .card {
         width: 45%;
     }
-    .subtitle {
-        text-align: center;
-    width: 90%;
-    }
+
 }
 @media screen and (max-width: 425px) {
     .card {
@@ -92,11 +83,11 @@ width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #1f2125;
+background-color: hwb(0deg 15% 85%);
 border-radius: 20px 20px 0 0;
 }
 .fancy_button_container img {
-    width: 30px;
+    width: 20px;
 }
 .image_container {
     height: 40%;
@@ -109,7 +100,27 @@ border-radius: 20px 20px 0 0;
 .text_container {
     width: 100%;
     height: 45%;
-    background-color: #1f2125;
-    color: white;
+    background-color: hwb(0deg 15% 85%);
     border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_container > div {
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    transition: 1s;
+    text-align: center;
+    opacity: 0 ;
+
+}
+
+.card:hover #text {
+    opacity: 1;
+
+}
+.card:hover {
+    transform: translateY(-15px);
 }
