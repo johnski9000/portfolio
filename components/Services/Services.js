@@ -26,9 +26,9 @@ function Services() {
         // data-aos="fade-up"
         // data-aos-duration="500"
       >
-        We build exceptional online experiences that inspire people and engage
-        their clients. We do this by combining UX, Technology, creativity, and
-        data.
+                  Experienced web professionals who cater for most services with experience across all popular platforms!
+
+        
       </div>
       <div
         className={styles.servicesMain}
