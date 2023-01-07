@@ -11,7 +11,8 @@ function ProjectItem({card}) {
             <div className={styles.image_container}>
             <img src={card.image}/>
             </div>
-            <div className={styles.text_container}><div id={styles.text}>{card.text}</div></div>
+            <div className={styles.text_container}></div>
+            <div id={styles.text}>{card.text}</div>
     </div>
   )
 }

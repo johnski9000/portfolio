@@ -31,10 +31,10 @@ function Projects() {
             text:"Brochure Website"
           }}
           />
-          <ProjectItem card={{
+          {/* <ProjectItem card={{
             image:"/hipstore.png",
             text:"Ecommerce Website"
-          }}/>
+          }}/> */}
           <ProjectItem card={{
             image:"jobhack.png",
             text:"Recruitment App"
@@ -43,10 +43,10 @@ function Projects() {
             image:"colmar.png",
             text:"Brochure Website"
           }}/>
-          <ProjectItem card={{
+          {/* <ProjectItem card={{
             image:"wellgosh.png",
             text:"Eccommerce Website"
-          }}/>
+          }}/> */}
           <ProjectItem card={{
             image:"https://nkdigitalsolutions.com/wp-content/uploads/2021/08/United-Building-Services.png",
             text:"Trade Website"

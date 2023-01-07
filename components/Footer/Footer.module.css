@@ -1,15 +1,18 @@
 
 @media screen and (min-width: 768px) {
     .mainContainer {
-        /* margin-top: 200px; */
     height: 300px;
-    /* background-color: white; */
-    background-color: #110f0f;
+    background-color: #eeece6;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.getInTouch {
+    color: black;
+    padding-bottom: 35px;
+    margin-top: 0;
+}
 .contactMeBox {
 height: 75px;
 width: 90%;
@@ -27,8 +30,9 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 }
 
 .contactMeBox div,
-.contactMeBox h1 {
-    min-width: 33.3%;
+.contactMeBox h1,
+.getInTouch {
+    min-width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +73,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
     /* background-color: white; */
     background-color: #110f0f;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

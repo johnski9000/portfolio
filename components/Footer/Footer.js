@@ -13,9 +13,9 @@ function Footer() {
     <div className={styles.mainContainer} 
     // data-aos="fade-up" data-aos-duration="1000"
     >
+      <h1 className={styles.getInTouch}>Interested in working together?</h1>
         <div className={styles.contactMeBox} >
             <h1>Get in touch</h1>
-            <div>Interested in working together?</div>
             <div>
             <Link href="/contact">
             <button className={styles.button}>Let's do this</button>
