@@ -69,7 +69,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 @media screen and (max-width: 768px) {
     .mainContainer {
         /* margin-top: 200px; */
-    height: 200px;
+    height: 250px;
     /* background-color: white; */
     background-color: #110f0f;
     display: flex;
@@ -79,7 +79,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 }
 
 .contactMeBox {
-height: 75px;
+height: 50px;
 width: 90%;
 background-image: linear-gradient(-180deg, hsl(46deg 68% 53%), hsl(46deg 72% 37%));
 /* background-image: linear-gradient(-180deg, hsl(46deg 81% 33%), hsl(46deg 90% 34%)); */
@@ -121,14 +121,26 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 
 .button {
     padding: 11px 14px;
-    background-color: black;
-    color: white;
-    font-size: 12px;
-    /* border: 1px solid black; */
+    background-color: transparent;
+    color: black;
+    font-size: 22px;
+    border: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    border-color: #ad8d20;
-    border-radius: 31px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    z-index: 0;
+}
+.mainContainer {
+    height: 300px;
+    background-color: #eeece6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.getInTouch {
+    color: black;
+    padding-bottom: 15px;
+    margin-top: 0;
+    text-align: center;
 }
 }
