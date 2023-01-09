@@ -1,14 +1,14 @@
 import nodemailer from "nodemailer"
-const email = "jwdigitalltd@gmail.com"
-const pass = "fidvjwawgbyssidd"
+const email = process.env.EMAIL
+const password = process.env.EMAIL_TEST_APP_PSW
 export const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: email,
-    pass,
+    user: "jwdigitalltd@gmail.com",
+    pass: "fidvjwawgbyssidd",
   }
 });
 export const mailOptions = {
-from: email,
-to: email
+from: "jwdigitalltd@gmail.com",
+to: "jwdigitalltd@gmail.com"
 }
