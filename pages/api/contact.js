@@ -1,6 +1,6 @@
 import { mailOptions, transporter } from "../../config/NodeMailer";
 
-const handler = (req, res) => {
+const handler = async(req, res) => {
   console.log(req.body);
   if (req.method === "POST") {
     const data = req.body;
